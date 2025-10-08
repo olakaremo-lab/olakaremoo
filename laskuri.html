@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energiajuomalaskuri</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+    <header>
+        <h1>Energiajuomat</h1>
+        <title>Rahakulut</title>
+        <div class="sivupalkki">
+            <h2>Valikko</h2>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="hyodyt_haitat.html">Hyödyt ja haitat</a></li>
+                <li><a href="laskuri.html">Laskuri</a></li>
+                <li><a href="suosikit.html">Suosituimmat juomat</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h3>   Selvitetään paljon rahaa energiajuomiin todellisuudessa kuluu</h3>
+    <p>    Moni ei tule ajatelleeksi paljon rahaa energiajuomiin kuluu pitkällä aikavälillä. Jos juomia ostaa aktiivisesti, niihin saattaa vuosien aikana sulaa isojakin summia. Alla löytyy laskuri josta selviää, paljon rahaa juuri sinulla kuluu energiajuomiin vuodessa.</p>
+
+	    <form>
+		    <label>Yhden energiajuoman hinta:</label><br> 
+		    <input type="text" id="energiajuoma" size="5"><br><br>
+            
+            <label>Kuinka monta kertaa viikossa juot:</label><br>
+            <input type="text" id="summa" size="5"> <br><br>
+		   
+            <input type="button" id="hinta" value="Selvitä" onclick="laskesumma()">
+	    </form>
+    </section>
+    <p id="vastaus"></p>
+	</section>
+	<script>
+		function laskesumma() {
+			let yhteismaara = document.getElementById("energiajuoma").value;
+            let summa = document.getElementById("summa").value;
+			let kokohinta = yhteismaara*(summa*52)
+			document.getElementById("vastaus").innerHTML = "Jos ostat "+summa+" kertaa viikossa energiajuoman, vuodessa se tekee " + kokohinta.toFixed(2)+"€";
+		}
+	</script>
+	<br><br><br><br>
+    
+</body>
+
+<html>

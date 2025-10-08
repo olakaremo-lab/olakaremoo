@@ -1,0 +1,156 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.hyodyt {
+  background-color: #d9fdd3; 
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.sisalto {
+    width: 70%;
+    margin-left: 2rem;
+}
+
+.haitat {
+  background-color: #ffd6d6; 
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+p {
+  margin-left: 2rem;
+}
+.paakuva {
+  display: block;
+  margin: 1rem auto; 
+  max-width: 100%;    
+  height: auto;
+  width: 200px;       
+}
+.sivupalkki {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem 2rem 2rem 0; /* ylä, oikea, ala, vasen */
+    width: 200px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    float: right; /* nyt oikeaan reunaan */
+}
+
+/* Linkkilista */
+.sivupalkki ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Linkkien tyylit */
+.sivupalkki li {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sivupalkki li a {
+    display: block;
+    background-color: #f0f0f0;
+    color: #003366;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sivupalkki li a:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Siirrä muu sisältö vasemmalle */
+.sisalto {
+    margin-right: 230px; /* Tilaa oikean reunan valikolle */
+    padding: 2rem;
+}
+.sisalto {
+    width: 70%;
+    margin-left: 2rem;
+    margin-right: 230px; /* tilaa valikolle */
+    padding: 2rem;
+}
+
+.sivupalkki {
+    width: 200px;
+    float: right;
+    margin: 2rem 2rem 2rem 0;
+}
+
+/* Tabletti */
+@media (max-width: 768px) {
+  .sisalto {
+    width: 90%;         /* Leveys isompi, enemmän tilaa */
+    margin: 1rem auto;  /* Keskitetään sisältö */
+    margin-right: 0;    /* Poistetaan valikon vaatima tila */
+    padding: 1rem;
+  }
+  
+  .sivupalkki {
+    width: 150px;       /* hieman kapeampi valikko */
+    float: none;        /* Poistetaan kellutus */
+    margin: 1rem auto;  /* Keskitetään valikko */
+  }
+}
+
+/* Puhelin */
+@media (max-width: 480px) {
+  .sisalto {
+    width: 95%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+  }
+
+@media (max-width: 480px) {
+  .sivupalkki {
+    width: 120px;       /* pienempi leveys mobiilissa */
+    padding: 0.5rem;    /* vähän pienempi padding */
+    margin: 0.5rem auto;
+    float: none;        /* ei kellutusta */
+  }
+  .sivupalkki h2 {
+    font-size: 1rem;    /* pienempi otsikko */
+    margin-bottom: 0.5rem;
+  }
+  .sivupalkki ul li a {
+    padding: 0.4rem 0.5rem; /* tiiviimpi linkkipalkki */
+    font-size: 0.9rem;      /* pienempi fontti */
+  }
+}
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
